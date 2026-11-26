@@ -1,0 +1,73 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+
+
+### Secretos y configuración local ###
+.env
+.env.*
+!.env.example
+application-local.yml
+application-local.yaml
+application-local.properties
+*.pem
+*.key
+
+### Logs ###
+*.log
+logs/
+
+### Java ###
+*.class
+hs_err_pid*.log
+replay_pid*.log
+
+### Docker ###
+docker-compose.override.yml
+compose.override.yaml
+
+### IntelliJ (compilación sin Maven) ###
+out/
+
+### Sistema operativo ###
+.DS_Store
+Thumbs.db
+desktop.ini
+
+### Temporales ###
+*.tmp
+*.bak
+*~
+*.swp
+*.swo
