@@ -1,3 +1,22 @@
 spring:
   application:
     name: spring-rest-jpa-lab
+
+  config:
+    import: optional:file:.env[.properties] #importa las propiedades del .env
+
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:prod}
+
+  datasource:
+    #url: jdbc:postgresql://localhost:4534/${POSTGRES_DB}
+    url: jdbc:postgresql://${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+    #driver-class-name: org.postgresql.Driver   # redundancia, Spring lo detecta
+      # automaticamente mediante la dependecia de PostgreSQL en el pom.xml
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false

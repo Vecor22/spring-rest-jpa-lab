@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+
+logging:
+  level:
+    root: info # establece loging general en INFO
+    org.hibernate.orm.jdbc.bind: off # desactiva los logs de Hibernate
+      # relacionado con asignación de valores y parámetros de consultas SQL
